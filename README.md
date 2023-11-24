@@ -25,15 +25,145 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - In Azure: Create a Resource Group & a Windows 10 Virtual Machine with 2-4 CPUs 
 - Install & Enable IIS in Windows 
 - Download & Install PHP Manager for IIS
-- Download & Install Rewrite Module
+- Download & Install URL Rewrite Module
 - Download PHP 7.3.8
-- Download & Install Microsoft Visual C++
+- Download & Install VCRedist
 - Download & Install MySQL 5.5.62
 - Download & Install Heidi SQL
 - Install osTicket v1.15.8
 
 
 <h2>Installation Steps</h2>
+STEP 1 - CREATE A RESOURCE GROUP AND A VIRTUAL MACHINE IN AZURE
+<p>
+STEP 2 - INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES
+<p>
+<img src="https://i.imgur.com/ejN3TMV.png" height="80%" width="80%" alt="Turn Windows features on/off"/>
+</p>
+<p>
+After you created a Resource group and a Windows 10 VM with 2-4 CPUs in Azure, connect to Microsoft Remote Desktop (Mac users) with your Windows 10 VM Public IP & credentials you created during its set up in Azure. In Windows, go to Control Panel > Programs > Programs & Features, and Turn Windows features on and off. 
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/KWxqFFv.png" height="80%" width="80%" alt="Enable IIS"/>
+</p>
+<img src="https://i.imgur.com/qYh2xQJ.png" height="80%" width="80%" alt="Enable IIS"/>
+<p>
+Before installing osTicket, you need IIS because osTicket is a web-based application. IIS (Internet Information Services) is the needed software that allows your computer to serve and display web pages on the internet.
+<p>
+Check mark Internet Information Services to enable it. Then, click on Web Management Tools > Application Development Features. Check CGI and Common Features to enable them as well.  
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/8xoF95v.png" height="80%" width="80%" alt="Install PHP Manager for IIS"/>
+</p>
+<p>
+Download and install PHP Manager for IIS. PHP Manager for IIS is a tool that helps Internet Information Services (IIS) work smoothly with PHP. It ensures that IIS can understand and process PHP code, making it compatible with osTicket since it's built using PHP.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/ETZ51Zc.png" height="80%" width="80%" alt="Install URL Rewrite Module"/>  
+</p>
+<p>
+Download and install URL Rewrite Module.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0VuTyZL.png" height="80%" width="80%" alt="PHP Folder on C:\"/>
+</p>
+<p>
+On your Windows local disk C:\, create a folder and name it "PHP". 
+</p>
+<br />
+
+<p>
+<img width="235" alt="image" src="https://github.com/stephanietamgho/osticket-installprocess/assets/151881271/7e62aa36-1044-4776-b636-3fe5cb15a03a">
+</p>
+<p>
+Then, download PHP 7.3.8, and unzip its contents, by clicking "Extract all", into C:\PHP folder you've just created.  
+</p>
+<br />
+
+  
+<p>
+<img src="https://i.imgur.com/fO1yYbA.png" height="80%" width="80%" alt="Visual C++ instal"/>
+</p>
+<p>
+Download and install VCRedist. osTicket is built using certain components or libraries created with Visual C++. VCRedist ensures that your computer has all the right tools so that osTicket can run smoothly without missing anything.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/OH31d1N.png" height="80%" width="80%" alt="MySQL instal"/>
+</p>
+<p>
+Download and install MySQL. osTicket needs a place to store and organize information. MySQL is the filing cabinet and management system that helps osTicket keep things in order. Installing MySQL before osTicket ensures that there's an organized place for osTicket to store and retrieve the information it needs to handle support tickets effectively.
+ <p>
+Choose Typical Setup and upon installation, choose Standard Configuration.
+ </p> 
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/VOENr29.png" height="80%" width="80%" alt="MySQL credentials"/>
+</p>
+<p>
+The standard configuration sets you up with a "root" username. You may add your own password.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/0gMTZY6.png" height="80%" width="80%" alt="Open IIS as Admin"/>
+</p>
+<p>
+Open IIS as an Admin. In the Windows search bar, write "IIS". You'll find IIS.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/8qMjwAQ.png" height="80%" width="80%" alt="Register PHP within IIS"/>
+</p>
+<p>
+In IIS, click on PHP Manager > Register new PHP version.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/pg1zuf0.png" height="80%" width="80%" alt="Pull CGI PHP folder"/>
+</p>
+<p>
+You will be prompted to add a CGI with .exe extension. Select C:\PHP and you CGI file will appear. Click on it so IIS can register it.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DuhEkVT.png" height="80%" width="80%" alt="Reload IIS"/>
+</p>
+<p>
+It's time to reload IIS with the new additions you've just made. Back to IIS main page, click "Restart".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -50,6 +180,124 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
