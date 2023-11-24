@@ -22,11 +22,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- In Azure: Create a Resource Group & a Windows 10 Virtual Machine with 2-4 CPUs 
+- Install & Enable IIS in Windows 
+- Download & Install PHP Manager for IIS
+- Download & Install Rewrite Module
+- Download PHP 7.3.8
+- Download & Install Microsoft Visual C++
+- Download & Install MySQL 5.5.62
+- Download & Install Heidi SQL
+- Install osTicket v1.15.8
 
 
 <h2>Installation Steps</h2>
