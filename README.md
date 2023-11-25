@@ -161,87 +161,98 @@ It's time to reload IIS with the new additions you've just made. Back to IIS' ma
 </p>
 <p>
 You are now ready to install osTicket! 😀 Download and install it. Then move its "Upload" folder to your local disk C:\inetpub\wwwroot.
-  Within c:\inetpub|wwwroot, rename "Uplaod" to "osTicket" (NO SPACE).
+  Within C:\inetpub|wwwroot, rename "Uplaod" to "osTicket" (NO SPACE).
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DuhEkVT.png" height="80%" width="80%" alt="Reload IIS"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+It's time to reload IIS with the new additions you've just made. Back to IIS' main page, click "Restart".
 </p>
 <br />
 
-
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/KcYJpeB.png" height="80%" width="80%" alt="Launch osTicket"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+It's time to launch osTicket! On IIS, to your left (see arrow), click on sites > Default > osTicket. Then, to your the right, locate and click "Browse *:80"
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/m6vwDWe.png" height="80%" width="80%" alt="osTicket missing extensions"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Here you are, in osTicket !!! Note that some extensions are not enabled. So we'll go back to IIS and enable them.
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/w0irABP.png.png" height="80%" width="80%" alt="Enabling .php extensions"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Back to IIS. Go to sites > Default > osTicket. Then, double-click on PHP Manager. You will see a list of both enabled and disabled .php extensions.
 </p>
-<br />
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Enable: php_imap.dll; php_intl.dll; php_opcache.dll. See the "enable" in the example section below.
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/C10F5ch.png" height="80%" width="80%" alt="Enabling .php extensions"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you've enabled the missing extensions, refesh osTicket in your browser. Observe the changes.
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/UFYe11S.png" height="80%" width="80%" alt="Rename ost-sampleconfig to ost-config"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now, it's time to rename your ost-sampleconfig.php file. In your local disk C:\inetpub\wwwroot\osTicket\includ\ost-sampleconfig.php, right-click on the file and rename it "ost-config".
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/Wthw0ZH.png" height="80%" width="80%" alt="Assign Permissions of ost-config.php"/>
+</p>
+<p>
+At this stage, we can assign new permissions to our ost-config.php file we've just renamed. Right-click on the file > Properties > Security > Advanced. Then, "disable inheritance" > Remove All Permissions.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/ZF0WQAB.png" height="80%" width="80%" alt="Assign Permissioms of ost-config.php"/>
+</p>
+<p>
+Once you removed all inheritances, click on "Add" > Select a principal. Write "Everyone", then click on "Check Names". 
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/vRIITNZ.png" height="80%" width="80%" alt="Give full control to Everyone"/>
+</p>
+<p>
+Give full control to the group "Everyone". Now, everyone has access to the file.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/ipN6Zhr.png" height="80%" width="80%" alt="Setting up osTicket in the browser"/>
+</p>
+<p>
+Back to the osTicket page on your browser, click "Continue". You may now fill most information. The default email address is the one that receives emails from customers.
 </p>
 <br />
 
