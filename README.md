@@ -34,9 +34,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
-STEP 1 - CREATE A RESOURCE GROUP AND A VIRTUAL MACHINE IN AZURE
+STEP 1 - CREATE A RESOURCE GROUP AND A VIRTUAL MACHINE IN AZURE.
 <p>
-STEP 2 - INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES
+STEP 2 - INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES.
+</p>
 <p>
 <img src="https://i.imgur.com/ejN3TMV.png" height="80%" width="80%" alt="Turn Windows features on/off"/>
 </p>
@@ -44,7 +45,6 @@ STEP 2 - INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES
 After you created a Resource group and a Windows 10 VM with 2-4 CPUs in Azure, connect to Microsoft Remote Desktop (Mac users) with your Windows 10 VM Public IP & credentials you created during its set up in Azure. In Windows, go to Control Panel > Programs > Programs & Features, and Turn Windows features on and off. 
 </p>
 <br />
-
 
 <p>
 <img src="https://i.imgur.com/KWxqFFv.png" height="80%" width="80%" alt="Enable IIS"/>
@@ -57,6 +57,10 @@ Check mark Internet Information Services to enable it. Then, click on Web Manage
 </p>
 <br />
 
+
+<p>
+STEP 3 - INSTALL PHP MANAGER FOR IIS.
+</p>
 <p>
 <img src="https://i.imgur.com/8xoF95v.png" height="80%" width="80%" alt="Install PHP Manager for IIS"/>
 </p>
@@ -66,6 +70,10 @@ Download and install PHP Manager for IIS. PHP Manager for IIS is a tool that hel
 <br />
 
 
+
+<p>
+STEP 4 - INSTALL REWRITE MODULE.
+</p>
 <p>
 <img src="https://i.imgur.com/ETZ51Zc.png" height="80%" width="80%" alt="Install URL Rewrite Module"/>  
 </p>
@@ -74,6 +82,10 @@ Download and install URL Rewrite Module.
 </p>
 <br />
 
+
+<p>
+STEP 5 - CREATE A PHP FOLDER IN C:\.
+</p>
 <p>
 <img src="https://i.imgur.com/0VuTyZL.png" height="80%" width="80%" alt="PHP Folder on C:\"/>
 </p>
@@ -90,7 +102,11 @@ Then, download PHP 7.3.8, and unzip its contents, by clicking "Extract all", int
 </p>
 <br />
 
-  
+
+
+<p>
+STEP 6 - INSTALL VCREDIST.
+</p>  
 <p>
 <img src="https://i.imgur.com/fO1yYbA.png" height="80%" width="80%" alt="Visual C++ instal"/>
 </p>
@@ -100,6 +116,10 @@ Download and install VCRedist. osTicket is built using certain components or lib
 <br />
 
 
+
+<p>
+STEP 7 - INSTALL MySQL.
+</p>
 <p>
 <img src="https://i.imgur.com/OH31d1N.png" height="80%" width="80%" alt="MySQL instal"/>
 </p>
@@ -121,6 +141,10 @@ The standard configuration sets you up with a "root" username. You may add your 
 <br />
 
 
+
+<p>
+STEP 8 - OPEN IIS AND REGISTER PHP WITHIN IIS.
+</p>
 <p>
 <img src="https://i.imgur.com/0gMTZY6.png" height="80%" width="80%" alt="Open IIS as Admin"/>
 </p>
@@ -155,6 +179,11 @@ You will be prompted to add a CGI with .exe extension. Select C:\PHP and you CGI
 It's time to reload IIS with the new additions you've just made. Back to IIS' main page, click "Restart".
 </p>
 <br />
+
+
+<p>
+STEP 9 - INSTALL osTICKET.
+</p>
 
 <p>
 <img src="https://i.imgur.com/JFUlEzg.png" height="80%" width="80%" alt="Install OsTicket"/>
@@ -213,12 +242,16 @@ Once you've enabled the missing extensions, refesh osTicket in your browser. Obs
 
 
 <p>
+STEP 10 - RENAME "OST-SAMPLE CONFIG" FILE AND ASSIGN NEW PERMISSIONS TO "OST-CONFIG" FILE.
+</p>
+<p>
 <img src="https://i.imgur.com/UFYe11S.png" height="80%" width="80%" alt="Rename ost-sampleconfig to ost-config"/>
 </p>
 <p>
 Now, it's time to rename your ost-sampleconfig.php file. In your local disk C:\inetpub\wwwroot\osTicket\includ\ost-sampleconfig.php, right-click on the file and rename it "ost-config".
 </p>
 <br />
+
 
 
 <p>
@@ -249,6 +282,9 @@ Give full control to the group "Everyone". Now, everyone has access to the file.
 
 
 <p>
+STEP 11 - CONTINUE SETTING UP osTICKET IN THE BROWSER.
+</p>
+<p>
 <img src="https://i.imgur.com/ipN6Zhr.png" height="80%" width="80%" alt="Setting up osTicket in the browser"/>
 </p>
 <p>
@@ -258,6 +294,9 @@ Back to the osTicket page on your browser, click "Continue". You may now fill mo
 
 
 <p>
+STEP 12 - INSTALL HeidiSQL.
+</p>
+<p>
 <img src="https://i.imgur.com/2rpcY9P.png" height="80%" width="80%" alt="Download and Install Heidi SQL"/>
 </p>
 <p>
@@ -266,6 +305,9 @@ Download and install Heidi SQL. It provides a visual interface for managing and 
 <br />
 
 
+<p>
+STEP 13 - CREATE A NEW SESSION AND DATABASE IN HeidiSQL.
+</p>
 <p>
 <img src="https://i.imgur.com/HDEsVxB.png" height="80%" width="80%" alt="Create a new session Heidi"/>
 </p>
@@ -284,6 +326,10 @@ Create a database called "osTicket". For this, right-click on the screen > creat
 <br />
 
 
+
+<p>
+STEP 14 - FINISH SETTIN UP osTICKET IN THE BROWSER.
+</p>
 <p>
 <img src="https://i.imgur.com/HrDrfYT.png" height="80%" width="80%" alt="Continuing osTicket set up"/>
 </p>
@@ -292,7 +338,9 @@ Back to osTicket in your browser, you may not fill all the remaining SQL section
 </p>
 <br />
 
-
+<p>
+STEP 15 - CONGRATULATIONS!
+</p>
 <p>
 <img src="https://i.imgur.com/tvABRAz.png" height="80%" width="80%" alt="Congrats, you're in!"/>
 </p>
