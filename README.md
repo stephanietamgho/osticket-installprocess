@@ -34,10 +34,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
-STEP 1 - CREATE A RESOURCE GROUP AND A VIRTUAL MACHINE IN AZURE.
-<p>
-STEP 2 - INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES.
-</p>
+<p><h2> 1. CREATE A RESOURCE GROUP AND A VIRTUAL MACHINE IN AZURE. </h2></p>
+
+<p><h2> 2. INSTALL / ENABLE IIS IN WINDOWS WITH CGI, COMMON HTTP FEATURES.</h2></p>
 <p>
 <img src="https://i.imgur.com/ejN3TMV.png" height="80%" width="80%" alt="Turn Windows features on/off"/>
 </p>
@@ -59,8 +58,7 @@ Check mark Internet Information Services to enable it. Then, click on Web Manage
 
 
 <p>
-STEP 3 - INSTALL PHP MANAGER FOR IIS.
-</p>
+<p><h2>3. INSTALL PHP MANAGER FOR IIS.</h2></p>
 <p>
 <img src="https://i.imgur.com/8xoF95v.png" height="80%" width="80%" alt="Install PHP Manager for IIS"/>
 </p>
@@ -72,7 +70,7 @@ Download and install PHP Manager for IIS. PHP Manager for IIS is a tool that hel
 
 
 <p>
-STEP 4 - INSTALL REWRITE MODULE.
+<p><h2>4.INSTALL REWRITE MODULE.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/ETZ51Zc.png" height="80%" width="80%" alt="Install URL Rewrite Module"/>  
@@ -84,7 +82,7 @@ Download and install URL Rewrite Module.
 
 
 <p>
-STEP 5 - CREATE A PHP FOLDER IN C:\.
+<p><h2>5. CREATE A PHP FOLDER IN C:\.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/0VuTyZL.png" height="80%" width="80%" alt="PHP Folder on C:\"/>
@@ -105,7 +103,7 @@ Then, download PHP 7.3.8, and unzip its contents, by clicking "Extract all", int
 
 
 <p>
-STEP 6 - INSTALL VCREDIST.
+<p><h2>6. INSTALL VCREDIST.</h2>
 </p>  
 <p>
 <img src="https://i.imgur.com/fO1yYbA.png" height="80%" width="80%" alt="Visual C++ instal"/>
@@ -118,7 +116,7 @@ Download and install VCRedist. osTicket is built using certain components or lib
 
 
 <p>
-STEP 7 - INSTALL MySQL.
+<p><h2>7. INSTALL MySQL.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/OH31d1N.png" height="80%" width="80%" alt="MySQL instal"/>
@@ -143,7 +141,7 @@ The standard configuration sets you up with a "root" username. You may add your 
 
 
 <p>
-STEP 8 - OPEN IIS AND REGISTER PHP WITHIN IIS.
+<p><h2>8. OPEN IIS AND REGISTER PHP WITHIN IIS.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/0gMTZY6.png" height="80%" width="80%" alt="Open IIS as Admin"/>
@@ -182,7 +180,7 @@ It's time to reload IIS with the new additions you've just made. Back to IIS' ma
 
 
 <p>
-STEP 9 - INSTALL osTICKET.
+<p><h2>9. INSTALL osTICKET.</h2>
 </p>
 
 <p>
@@ -242,7 +240,7 @@ Once you've enabled the missing extensions, refesh osTicket in your browser. Obs
 
 
 <p>
-STEP 10 - RENAME "OST-SAMPLE CONFIG" FILE AND ASSIGN NEW PERMISSIONS TO "OST-CONFIG" FILE.
+<p><h2>10. RENAME "OST-SAMPLE CONFIG" FILE AND ASSIGN NEW PERMISSIONS TO "OST-CONFIG" FILE.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/UFYe11S.png" height="80%" width="80%" alt="Rename ost-sampleconfig to ost-config"/>
@@ -282,7 +280,7 @@ Give full control to the group "Everyone". Now, everyone has access to the file.
 
 
 <p>
-STEP 11 - CONTINUE SETTING UP osTICKET IN THE BROWSER.
+<p><h2>11. CONTINUE SETTING UP osTICKET IN THE BROWSER.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/ipN6Zhr.png" height="80%" width="80%" alt="Setting up osTicket in the browser"/>
@@ -294,7 +292,7 @@ Back to the osTicket page on your browser, click "Continue". You may now fill mo
 
 
 <p>
-STEP 12 - INSTALL HeidiSQL.
+<p><h2>12. INSTALL HeidiSQL.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/2rpcY9P.png" height="80%" width="80%" alt="Download and Install Heidi SQL"/>
@@ -306,7 +304,7 @@ Download and install Heidi SQL. It provides a visual interface for managing and 
 
 
 <p>
-STEP 13 - CREATE A NEW SESSION AND DATABASE IN HeidiSQL.
+<p><h2>13. CREATE A NEW SESSION AND DATABASE IN HeidiSQL.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/HDEsVxB.png" height="80%" width="80%" alt="Create a new session Heidi"/>
@@ -328,7 +326,7 @@ Create a database called "osTicket". For this, right-click on the screen > creat
 
 
 <p>
-STEP 14 - FINISH SETTIN UP osTICKET IN THE BROWSER.
+<p><h2>14. FINISH SETTIN UP osTICKET IN THE BROWSER.</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/HrDrfYT.png" height="80%" width="80%" alt="Continuing osTicket set up"/>
@@ -339,7 +337,7 @@ Back to osTicket in your browser, you may not fill all the remaining SQL section
 <br />
 
 <p>
-STEP 15 - CONGRATULATIONS!
+<p><h2>STEP 15. CONGRATULATIONS!</h2>
 </p>
 <p>
 <img src="https://i.imgur.com/tvABRAz.png" height="80%" width="80%" alt="Congrats, you're in!"/>
